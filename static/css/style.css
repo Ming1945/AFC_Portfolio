@@ -460,7 +460,7 @@ h6 {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(186, 255, 0, 0.7);
+    background-color: rgba(64, 64, 64, 0.9);
     color: #fff;
     opacity: 0;
     -webkit-transition: .7s;
@@ -468,7 +468,6 @@ h6 {
     -ms-transition: .7s ;
     -o-transition: .7s ;
     transition: .7s ;
-
 }
 
 .gallery-items .img img {
