@@ -31,7 +31,7 @@ class Service(models.Model):
 class RecentWork(models.Model):
     title = models.CharField(max_length=100000, verbose_name="Work title")
     image = models.ImageField(upload_to="works")
-    
+    website = models.CharField(max_length=100000, verbose_name="Website Address", null=True)
     def __str__(self) -> str:
         return self.title
 
