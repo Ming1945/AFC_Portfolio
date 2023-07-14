@@ -444,6 +444,7 @@ h6 {
 
 .gallery-items {
     position: relative;
+    padding: 5px;
 }
 
 .gallery-items .img {

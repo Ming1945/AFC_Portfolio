@@ -18,8 +18,9 @@
         </div>
     </div>
 
-    {#    About section#}
 
+    
+    {#    About section#}
     <div id="about" class="about-area section-padding">
         <div class="container">
             <div class="row">
@@ -40,6 +41,8 @@
             </div>
         </div>
     </div>
+
+
 
     {#    Services Section#}
     <div id="services" class="section-padding">
@@ -64,6 +67,8 @@
             </div>
         </div>
     </div>
+
+
 
     {#    Recent Works Section#}
     <div id="portfolio" class="portfolio-area section-padding">
@@ -92,8 +97,38 @@
         </div>
     </div>
 
-    {#    Contact section#}
 
+
+    {#    Featured Projects Section#}
+    <div id="portfolio" class="portfolio-area section-padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header">
+                        <h2>Featured Projects</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% for project in projects %}
+                    <div class="col-md-4 col-sm-4 col-xs-12 no-padding">
+                        <div class="gallery-items">
+                            <a href="http://{{ project.website }}">
+                                <img src="{{ project.image.url }}" alt="{{ project.title }}">
+                              </a>
+                            <div class="gallery-text">
+                                <h2>{{ project.title }}</h2>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+
+
+    {#    Contact section#}
     <div class="invitation-area section-padding">
         <div class="container">
             <div class="row">
