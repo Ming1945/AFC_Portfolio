@@ -37,13 +37,14 @@ class RecentWork(models.Model):
     
 
 
-#Recent work
+#Featured Project
 class FeaturedProject(models.Model):
     title = models.CharField(max_length=100000, verbose_name="Project title", null=True)
     image = models.ImageField(upload_to="projects", null=True)
     website = models.CharField(max_length=100000, verbose_name="Website Address", null=True)
     def __str__(self) -> str:
         return self.title
+
 
 
 
