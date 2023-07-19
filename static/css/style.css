@@ -445,6 +445,11 @@ h6 {
 .gallery-items {
     position: relative;
     padding: 5px;
+    transition: all .3s ease-in-out !important;
+}
+
+.gallery-items:hover {
+    transform: translateY(-2px);
 }
 
 .gallery-items .img {
@@ -668,6 +673,15 @@ h6 {
     font-weight: 600;
     letter-spacing: 1px;
 }
+.btn.btn-send:hover, .download-btn:hover, .my-btn-3:hover {
+    transform: translateY(-2px);
+}
+
+.btn.btn-send, .download-btn, .my-btn-3 {
+    transition: all .3s ease-in-out !important;
+    box-shadow: 0 0 10px 3px rgba(0,0,0, 0.05);
+}
+
 
 /*------------- Contact area ends -------------*/
 
@@ -686,3 +700,4 @@ h6 {
 }
 
 /*--------------- Footer area ends -------------*/
+
